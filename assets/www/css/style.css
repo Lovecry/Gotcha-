@@ -1,0 +1,329 @@
+/*************************************************************************** Generic Button Style Start */
+.button {
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	padding: 4px 10px;
+	-webkit-border-radius: 5px;
+}
+ .button.black {
+	 background-image: -webkit-gradient(linear, left top, left bottom, 
+		 from(#7d828c),
+		 color-stop(0.5, #303749), 
+		 color-stop(0.5, #121a2e), 
+		 to(#121a2e));
+	 border: solid 1px rgba(79, 79, 79, 0.75);
+ }
+/*  .button.black:hover { */
+/* 	background-image: -webkit-gradient(linear, left top, left bottom,  */
+/* 		from(#4286f5),  */
+/* 		color-stop(0.5, #4286f5), */
+/* 		color-stop(0.5, #194fdb), */
+/* 		to(#194fdb)); */
+/* } */
+/*************************************************************************** Generic Button Style End*/
+
+/*************************************************************************** Back Button Style Start*/
+.button.back {
+	position: absolute;
+	left: 2%;
+	top: 2%;
+	padding-left: 5px;
+	margin-left: 8px;
+}
+.back.black > span {
+    position: relative;
+    z-index: 2;
+}
+.back.black > span.pointer {
+       display: block;
+       height: 20px;
+       width: 20px;
+       background-image: -webkit-gradient(linear, left top, right bottom, 
+              from(#7d828c),
+              color-stop(0.5, #303749), 
+              color-stop(0.5, #121a2e), 
+              to(#121a2e));
+       border-left: solid 1px rgba(79, 79, 79, 0.75);
+       border-bottom: solid 1px rgba(79, 79, 79, 0.75);
+       border-top: hidden;
+       border-right: none;
+      -webkit-transform: rotate(45deg);
+      -webkit-mask-image: -webkit-gradient(linear, left bottom, right top, 
+              from(#000000), 
+              color-stop(0.5,#000000), 
+              color-stop(0.5, transparent), 
+              to(transparent));
+       position: absolute;
+       left: -8px;
+       top: 3px;
+       z-index: 1;
+}
+
+.button.back.black.profile {
+	position: absolute;
+	left: 2%;
+	bottom: 2%;
+	top: inherit;
+	font-size:16px;
+}
+
+.hide {
+	display:none;
+	width:25%;
+	float:left;
+	margin-left:0%;
+	margin-right:1%;
+}
+
+.save {
+	position: absolute;
+	right: 2%;
+	bottom: 2%;
+	top: inherit;
+	font-size:16px;
+	display:none;
+}
+
+/*************************************************************************** Back Button Style End*/
+
+/*************************************************************************** Facebook Button Start */
+button.facebook {
+background: #6e86bd;
+background: -moz-linear-gradient(top, #6e86bd 0%, #6680b9 100%);
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6e86bd), to(#6680b9));
+border-top: 1px solid #3f5b98;
+border-left: 1px solid #3f5b98;
+border-bottom: 1px solid #3f5b98;
+border-right: 1px solid #3f5b98;
+-moz-border-radius: 6px;
+-webkit-border-radius: 6px;
+border-radius: 6px;
+-moz-box-shadow: inset 0 1px 0 0 #abbbdf;
+-webkit-box-shadow: inset 0 1px 0 0 #abbbdf;
+box-shadow: inset 0 1px 0 0 #abbbdf;
+color: #fff;
+font-size: 1em;
+font-weight: bold;
+line-height: 1;
+padding: 8px 0 7px 0;
+text-align: center;
+text-shadow: 0 -1px 1px #344d80;
+width: 200px;
+margin: 0 0 10px 0;
+}
+ 
+button.facebook:hover {
+background: #546a99;
+background: -moz-linear-gradient(top, #546a99 0%, #546a99 100%);
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#546a99), to(#546a99));
+-moz-box-shadow: inset 0 1px 0 0 #98a8d3;
+-webkit-box-shadow: inset 0 1px 0 0 #98a8d3;
+box-shadow: inset 0 1px 0 0 #98a8d3;
+text-shadow: 0 -1px 1px #283960;
+color: #fff;
+cursor: pointer;
+}
+ 
+button.facebook:active {
+border: 1px solid #283960;
+-moz-box-shadow: inset 0 0 4px 2px #51658b, 0 0 1px 0 #eee;
+-webkit-box-shadow: inset 0 0 4px 2px #51658b, 0 0 1px 0 #eee;
+box-shadow: inset 0 0 4px 2px #51658b, 0 0 1px 0 #eee;
+}
+/*************************************************************************** Facebook Button End */
+
+/*************************************************************************** GiveTarget Button Start */
+.givetarget {
+	color:red;
+	width:80%;
+	height:80%;
+	font-size:1.2em;
+	margin-top: 3%;
+	display : inline;
+}
+
+
+/*************************************************************************** GiveTarget Button End */
+/*************************************************************************** GOTCHA! Button Start */
+/*
+.gotcha {
+	background-image: -webkit-gradient(linear, left top, left bottom, 
+		 from(#FF7B7B),
+		 color-stop(0.5, #A70000), 
+		 color-stop(0.5, #A30000), 
+		 to(#460303));
+	border: solid 1px rgba(79, 79, 79, 0.75);	 
+	color:black;
+	width:80%;
+	height:40%;
+	font-size:2em;
+	margin-top: 3%;
+}
+*/
+/*************************************************************************** GOTCHA! Button End */
+
+/*************************************************************************** WAITING Button Start */
+
+#squaresWaveG{
+position:relative;
+margin: 0 auto;
+width:240px;
+height:29px}
+
+.squaresWaveG{
+position:absolute;
+top:0;
+background-color:#000000;
+width:29px;
+height:29px;
+-moz-animation-name:bounce_squaresWaveG;
+-moz-animation-duration:1.6s;
+-moz-animation-iteration-count:infinite;
+-moz-animation-direction:linear;
+-webkit-animation-name:bounce_squaresWaveG;
+-webkit-animation-duration:1.6s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-direction:linear;
+-ms-animation-name:bounce_squaresWaveG;
+-ms-animation-duration:1.6s;
+-ms-animation-iteration-count:infinite;
+-ms-animation-direction:linear;
+-o-animation-name:bounce_squaresWaveG;
+-o-animation-duration:1.6s;
+-o-animation-iteration-count:infinite;
+-o-animation-direction:linear;
+animation-name:bounce_squaresWaveG;
+animation-duration:1.6s;
+animation-iteration-count:infinite;
+animation-direction:linear;
+}
+
+#squaresWaveG_1{
+left:0;
+-moz-animation-delay:0.64s;
+-webkit-animation-delay:0.64s;
+-ms-animation-delay:0.64s;
+-o-animation-delay:0.64s;
+animation-delay:0.64s;
+}
+
+#squaresWaveG_2{
+left:30px;
+-moz-animation-delay:0.8s;
+-webkit-animation-delay:0.8s;
+-ms-animation-delay:0.8s;
+-o-animation-delay:0.8s;
+animation-delay:0.8s;
+}
+
+#squaresWaveG_3{
+left:60px;
+-moz-animation-delay:0.96s;
+-webkit-animation-delay:0.96s;
+-ms-animation-delay:0.96s;
+-o-animation-delay:0.96s;
+animation-delay:0.96s;
+}
+
+#squaresWaveG_4{
+left:90px;
+-moz-animation-delay:1.12s;
+-webkit-animation-delay:1.12s;
+-ms-animation-delay:1.12s;
+-o-animation-delay:1.12s;
+animation-delay:1.12s;
+}
+
+#squaresWaveG_5{
+left:120px;
+-moz-animation-delay:1.28s;
+-webkit-animation-delay:1.28s;
+-ms-animation-delay:1.28s;
+-o-animation-delay:1.28s;
+animation-delay:1.28s;
+}
+
+#squaresWaveG_6{
+left:150px;
+-moz-animation-delay:1.44s;
+-webkit-animation-delay:1.44s;
+-ms-animation-delay:1.44s;
+-o-animation-delay:1.44s;
+animation-delay:1.44s;
+}
+
+#squaresWaveG_7{
+left:180px;
+-moz-animation-delay:1.6s;
+-webkit-animation-delay:1.6s;
+-ms-animation-delay:1.6s;
+-o-animation-delay:1.6s;
+animation-delay:1.6s;
+}
+
+#squaresWaveG_8{
+left:210px;
+-moz-animation-delay:1.76s;
+-webkit-animation-delay:1.76s;
+-ms-animation-delay:1.76s;
+-o-animation-delay:1.76s;
+animation-delay:1.76s;
+}
+
+@-moz-keyframes bounce_squaresWaveG{
+0%{
+background-color:#000000;
+}
+
+100%{
+background-color:#FFFFFF;
+}
+
+}
+
+@-webkit-keyframes bounce_squaresWaveG{
+0%{
+background-color:#000000;
+}
+
+100%{
+background-color:#FFFFFF;
+}
+
+}
+
+@-ms-keyframes bounce_squaresWaveG{
+0%{
+background-color:#000000;
+}
+
+100%{
+background-color:#FFFFFF;
+}
+
+}
+
+@-o-keyframes bounce_squaresWaveG{
+0%{
+background-color:#000000;
+}
+
+100%{
+background-color:#FFFFFF;
+}
+
+}
+
+@keyframes bounce_squaresWaveG{
+0%{
+background-color:#000000;
+}
+
+100%{
+background-color:#FFFFFF;
+}
+}
+
+/*************************************************************************** WAITING Button END */
+

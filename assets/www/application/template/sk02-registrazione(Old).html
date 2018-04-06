@@ -1,0 +1,35 @@
+<header>
+<a href="#" class="button back black"><span class="pointer"></span><span>Back</span></a>
+<titleregistrazione>Create Account</titleregistrazione>
+</header>
+
+<div id="main" class="registrazione">
+	<div id="registrazioneImage"><img id="smallImage" src="img/pic.png"/></div>   
+    <div id="registrazioneButtons">
+    	<button class="button black" onclick="gotchacamera.capturePhoto();">Capture Photo</button>
+    	<button class="button black" onclick="gotchacamera.getPhoto('photolibrary');">From Photo Library</button>
+    </div>
+    <form metod="post" name="formregistrazione">			
+    	<input name="email" type="text" placeholder="E-Mail"><br/>		
+		<input name="username" type="text" placeholder="Username"><br/>
+		<input name="password" type="password" placeholder="Password"><br/>
+		<input name="passwordconfirm" type="password" placeholder="Confirm Password"><br/>
+		<input class="button black" type="button" value="Create" onclick="gotchaRegistrazione.registrationCheckData();return false;"><br/>
+	</form>
+</div>
+
+<div id="registrazionefooter">
+	By creating your account you confirm that you have read and accept the <a href="javascript:void(0)" onclick="gotchapopup.show();">Terms Of Use</a>	
+</div>
+
+	 
+<div id='popup'>
+	<div id='gotchadisclaimer'>
+		<disclaimerhead>Gotcha! Disclaimer</disclaimerhead><br><br><br>
+		<disclaimerbody>
+			1- Accetto di rendere pubbliche informazioni sulla mia persona al fine di rendere una esperienza ludica migliore.<br>
+			2- Dichiaro di utilizzare informazioni riguardanti altri giocatori solo al fine del gioco stesso.<br>
+			3- ...<br>
+		</disclaimerbody>
+	</div>
+</div>

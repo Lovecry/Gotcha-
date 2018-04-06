@@ -1,0 +1,17 @@
+<div id="main" class="login">	
+	<div id="titleloginDiv"> <titlelogin>G o t c h a !</titlelogin></div>	
+	<form metod="post" name="formLogin">				
+		<input name="username" type="text" placeholder="Username"><br/>
+		<input name="password" type="password" placeholder="Password"><br/>
+		<input class="button black" type="submit" value="Login" onclick="gotchaLogin.loginCheckData();return false;"><br/>
+	</form> 
+	<div id="popuperror"></div>
+	<div id="taptoback"></div>
+	<button class="facebook" onclick="gotchaLogin.facebookLogin();">f   |  Login with Facebook</button><br/>	
+
+<div id="loginfooter">
+	Non hai un account ? <a href="#registrazione">Registrati ora</a><br/>
+	Hai dimenticato la Password <a onclick="gotchaLogin.forgotPassword()">Clicca qui</a><br/>		
+</div>
+
+</div>

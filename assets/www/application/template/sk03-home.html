@@ -1,0 +1,129 @@
+<!--header><titlehome>G o t c h a !</titlehome></header--> 
+
+<header>
+	<div id="logo">
+		GOTCHA!
+	</div>
+	
+	<div id="menu">
+		<a class="button small" href="#accountstats">Stats</a>
+		<a class="button small" onclick="gotchaHome.profile('accountProfile')">Profile</a>
+	</div>
+	
+	<div style="clear:both;"></div>
+</header>
+
+
+
+<div id="main" class="home">
+	<div id="home_user">
+		<div id="home_userphoto">
+			<img id="avatar" src="img/pic.png" onclick="gotchaHome.changePhoto()"/>
+		</div>
+		
+		<div id="home_userdetails">
+			<div id="accountname"></div>
+			<div class="accountinfo">
+				Gotcha! Points: <b><span id="accountpoints">000</span></b>
+			</div>
+			<div class="accountinfo">
+				Gotcha! Rank: <b>#<span id="accountrank">000</span></b>
+			</div>
+		</div>
+		
+		<div id="home_userphoto_buttons">
+			<a class="button small hide" onclick="gotchacamera.capturePhoto('change');">Take Pic</a>
+			<a class="button small hide" onclick="gotchacamera.getPhoto('change');">Gallery</a>
+			<a class="button small hide" onclick="gotchaHome.noChange();">Back</a>
+		</div>
+		
+		<div style="clear:both;"></div>
+		
+	</div>
+	
+	<div id="home_gamezones" class="home_window">
+		<div class="label">GAME SESSION KEYWORDS</div>
+		<a id="homegamezonekey1" class="button item" onclick="gotchaHome.sessionUpdate('key1')"></a>
+		<a id="homegamezonekey2" class="button item" onclick="gotchaHome.sessionUpdate('key2')"></a>
+		<a id="homegamezonekey3" class="button item" onclick="gotchaHome.sessionUpdate('key3')"></a>
+		<a id="homegamezonekey4" class="button item" onclick="gotchaHome.sessionUpdate('key4')"></a>
+		<a id="homegamezonekey5" class="button item" onclick="gotchaHome.sessionUpdate('key5')"></a>
+		<div class="info">TAP TO EDIT</div>
+	</div>
+	
+	<div id="home_gameplayers" class="home_window">
+		<div class="label">AVAILABLES TARGETS</div>
+		<div id="homegameplayers" class="item">999</div>
+		<div class="info">FOUND USING CURRENT KEYWORDS</div>
+	</div>
+	
+	<div style="clear:both;"></div>
+	
+	<div id="home_gametarget" class="home_window">
+		<div class="label">CURRENT TARGET INFORMATIONS</div>
+		<div class="photo">
+			<img id="targetAvatar" src="img/pic.png"/>
+		</div>
+		
+		<div id="home_userdetails">
+			<div id="accountname">Target Name</div>
+			<div class="accountinfo">
+				Gotcha! Points: <b><span id="targetAccountpoints">000</span></b>
+			</div>
+			<div class="accountinfo">
+				Gotcha! Reward: <b><span id="targetAccounreward">000</span></b>
+			</div>
+		</div>
+		
+		
+		<!--a class="button gotcha" href="#">gotcha!</a-->
+		<div style="clear:both;"></div>
+		<a class="button small linktarget" href="#target">Detailed Target File</a>
+		<div class="info">OPEN FILE TO GET MORE INFOS OR TO GET HIM!</div>
+	</div>
+	<div>
+		<a id="homeGameReadyButton" class="button red" onclick="gotchaHome.selectTarget()"></a>
+	</div>
+	
+	
+	<!--div id="homephoto">
+		<img id="avatar" src="img/pic.png" onclick="gotchaHome.changePhoto()"/>
+		<button class="button black hide" onclick="gotchacamera.capturePhoto('change');">Capture Photo</button>
+    	<button class="button black hide" onclick="gotchacamera.getPhoto('change');">From Photo Library</button><br>
+    	<button class="button black hide" onclick="gotchaHome.noChange();">No Change</button><br>
+	</div-->
+	<!--div id="homeaccount" >
+		<accountname id="accountname"></accountname><br>
+		<button class="button black" onclick="gotchaHome.profile('accountProfile')">Edit Profile Info</button><br>
+		<section id="homeaccountgotcha">
+			<div class="etiquette">Gotcha!</div>
+		</section>
+		<section id="homeaccountrank">
+			<div class="etiquette">Rank</div>
+		</section>
+	</div-->
+	<!--div id="homegamezone">
+		<div class="etiquette">Gaming Zones</div>
+		<div id="homegamezonekey1" class="homegamezonekey" onclick="gotchaHome.sessionUpdate('key1')"></div>
+		<div id="homegamezonekey2" class="homegamezonekey" onclick="gotchaHome.sessionUpdate('key2')"></div>
+		<div id="homegamezonekey3" class="homegamezonekey" onclick="gotchaHome.sessionUpdate('key3')"></div>
+		<div id="homegamezonekey4" class="homegamezonekey" onclick="gotchaHome.sessionUpdate('key4')"></div>
+		<div id="homegamezonekey5" class="homegamezonekey" onclick="gotchaHome.sessionUpdate('key5')"></div>
+	</div-->
+	<!--div id="homegameplayers">
+		<div class="etiquette">Players Online</div>
+	</div>
+	<div id="homegameready">
+		<button id="homeGameReadyButton" class="button black givetarget" onclick="gotchaHome.selectTarget()">
+			I'm not ready, i should complete my Profile before starting
+		</button>
+	</div-->	
+</div>
+
+<!--footer>
+	<a href="#home"><img class="linkhome" src="img/linkhome.png"></a>
+	<a href="#target"><img class="linktarget" src="img/linktarget.png"></a>
+	<a href="#accountstats"><img class="linkaccountstats" src="img/linkstats.png"></a>
+</footer-->
+
+<script>gotchaHome.loadUserData()</script>

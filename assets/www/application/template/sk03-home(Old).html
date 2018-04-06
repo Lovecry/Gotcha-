@@ -1,0 +1,44 @@
+<header><titlehome>G o t c h a !</titlehome></header> 
+
+<div id="main" class="home">
+	<div id="homephoto">
+		<img id="avatar" src="img/pic.png" onclick="gotchaHome.changePhoto()"/>
+		<button class="button black hide" onclick="gotchacamera.capturePhoto('change');">Capture Photo</button>
+    	<button class="button black hide" onclick="gotchacamera.getPhoto('change');">From Photo Library</button><br>
+    	<button class="button black hide" onclick="gotchaHome.noChange();">No Change</button><br>
+	</div>
+	<div id="homeaccount" >
+		<accountname id="accountname"></accountname><br>
+		<button class="button black" onclick="gotchaHome.profile('accountProfile')">Edit Profile Info</button><br>
+		<section id="homeaccountgotcha">
+			<div class="etiquette">Gotcha!</div>
+		</section>
+		<section id="homeaccountrank">
+			<div class="etiquette">Rank</div>
+		</section>
+	</div>
+	<div id="homegamezone">
+		<div class="etiquette">Gaming Zones</div>
+		<div id="homegamezonekey1" class="homegamezonekey" onclick="gotchaHome.sessionUpdate('key1')"></div>
+		<div id="homegamezonekey2" class="homegamezonekey" onclick="gotchaHome.sessionUpdate('key2')"></div>
+		<div id="homegamezonekey3" class="homegamezonekey" onclick="gotchaHome.sessionUpdate('key3')"></div>
+		<div id="homegamezonekey4" class="homegamezonekey" onclick="gotchaHome.sessionUpdate('key4')"></div>
+		<div id="homegamezonekey5" class="homegamezonekey" onclick="gotchaHome.sessionUpdate('key5')"></div>
+	</div>
+	<div id="homegameplayers">
+		<div class="etiquette">Players Online</div>
+	</div>
+	<div id="homegameready">
+		<button id="homeGameReadyButton" class="button black givetarget" onclick="gotchaHome.selectTarget()">
+			I'm not ready, i should complete my Profile before starting
+		</button>
+	</div>	
+</div>
+
+<footer>
+	<a href="#home"><img class="linkhome" src="img/linkhome.png"></a>
+	<a href="#target"><img class="linktarget" src="img/linktarget.png"></a>
+	<a href="#accountstats"><img class="linkaccountstats" src="img/linkstats.png"></a>
+</footer>
+
+<script>gotchaHome.loadUserData()</script>

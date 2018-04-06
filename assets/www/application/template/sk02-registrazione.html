@@ -1,0 +1,85 @@
+<!--header>
+<a href="#" class="button back black"><span class="pointer"></span><span>Back</span></a>
+<titleregistrazione>Create Account</titleregistrazione>
+</header-->
+
+<header>
+	<div id="logo">
+		GOTCHA!
+	</div>
+	
+	<div id="menu">
+		<a class="button small" href="#">Back</a>
+	</div>
+	
+	<div style="clear:both;"></div>
+</header>
+
+<div id="main" class="registrazione">
+	
+	<div style="clear:both;"></div>
+	
+	<div id="file_user">
+		
+		<div class="photo">
+			<img id="targetAvatar" src="img/pic.png"/>
+		</div>
+		
+		<div style="clear:both;"></div>
+		<div class="buttons">
+			<a class="button small" onclick="gotchacamera.capturePhoto();">Take Pic</a>
+			<a class="button small" onclick="gotchacamera.getPhoto('photolibrary');">Gallery</a>
+		</div>
+	</div>
+	
+	<div id="account_infos" class="home_window">
+		<form metod="post" name="formregistrazione">
+			<div class="label">ACCOUNT INFORMATION</div>
+			<div class="info_label">Email</div>
+			<input type="text" name="email" class="info_value" placeholder="email" />
+			<div class="info_label">Nickame</div>
+			<input type="text" name="username" class="info_value" placeholder="nickname" />
+			<div class="info_label">Password</div>
+			<input type="password" name="password" class="info_value" placeholder="password" />
+			<div class="info_label">Confirm Password</div>
+			<input type="password" name="passwordconfirm" class="info_value" placeholder="confirm password" />
+			
+			<div style="clear:both;"></div>
+			<a class="button small" href="#" onclick="gotchaRegistrazione.registrationCheckData();return false;">Create</a>
+			<div class="info">By creating your account you confirm that you have read and accept the <a href="javascript:void(0)" onclick="gotchapopup.show();">Terms Of Use</a></div>
+		</form>
+	</div>
+	
+	
+</div>
+
+<!--div id="main" class="registrazione">
+	<div id="registrazioneImage"><img id="smallImage" src="img/pic.png"/></div>   
+    <div id="registrazioneButtons">
+    	<button class="button black" onclick="gotchacamera.capturePhoto();">Capture Photo</button>
+    	<button class="button black" onclick="gotchacamera.getPhoto('photolibrary');">From Photo Library</button>
+    </div>
+    <form metod="post" name="formregistrazione">			
+    	<input name="email" type="text" placeholder="E-Mail"><br/>		
+		<input name="username" type="text" placeholder="Username"><br/>
+		<input name="password" type="password" placeholder="Password"><br/>
+		<input name="passwordconfirm" type="password" placeholder="Confirm Password"><br/>
+		<input class="button black" type="button" value="Create" onclick="gotchaRegistrazione.registrationCheckData();return false;"><br/>
+	</form>
+</div>
+
+<div id="registrazionefooter">
+	By creating your account you confirm that you have read and accept the <a href="javascript:void(0)" onclick="gotchapopup.show();">Terms Of Use</a>	
+</div-->
+
+	 
+<div id='popup'>
+	<div id='gotchadisclaimer'>
+		<disclaimerhead>Gotcha! Disclaimer</disclaimerhead><br><br><br>
+		<disclaimerbody>
+			1- Accetto di rendere pubbliche informazioni sulla mia persona al fine di rendere una esperienza ludica migliore.<br>
+			2- Dichiaro di utilizzare informazioni riguardanti altri giocatori solo al fine del gioco stesso.<br>
+			3- ...<br>
+		</disclaimerbody>
+	</div>
+</div>

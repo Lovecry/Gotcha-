@@ -1,0 +1,27 @@
+<header><titlehome>G o t c h a !</titlehome></header> 
+
+<div id="main" class="target">
+	<div id="targetnickname">
+		<accountname id="targetname"></accountname><br>
+	</div>
+	<div id="targetphoto">
+		<img src="img/pic.png"/>
+	</div>
+	<div id="targetinfo">
+		<a href="#profile"><button class="button black" onclick="gotchaHome.profile('targetProfile')">Profile Info</button></a><br>
+		<div id="targetreward">
+			<div class="etiquette">Reward</div>
+		</div>
+	</div>
+	<div id="targetgotchabutton">
+		<button class="button gotcha" onclick="gotchaTarget.checkCoords()">GOTCHA!</button>
+	</div>
+</div>
+
+<footer>
+	<a href="#home"><img class="linkhome" src="img/linkhome.png"></a>
+	<a href="#target"><img class="linktarget" src="img/linktarget.png"></a>
+	<a href="#accountstats"><img class="linkaccountstats" src="img/linkstats.png"></a>
+</footer>
+
+<script>gotchaTarget.loadUserData()</script>

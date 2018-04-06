@@ -1,0 +1,78 @@
+
+<header>
+	<div id="logo">
+		GOTCHA!
+	</div>
+	
+	<div id="menu">
+		<a class="button small" href="#accountstats">Stats</a>
+		<a class="button small" href="#home">Home</a>
+	</div>
+	
+	<div style="clear:both;"></div>
+</header>
+
+
+<div id="main" class="target">
+	
+	<div style="clear:both;"></div>
+	
+	<div id="file_gotcha">
+		
+		<div class="photo">
+			<img id="targetAvatar" src="img/pic.png"/>
+		</div>
+		
+		<div id="home_userdetails">
+			<div id="accountname">Target Name</div>
+		</div>
+		
+		<div style="clear:both;"></div>
+	</div>
+		
+	<a class="button red gotcha" onclick="gotchaTarget.checkCoords();">
+		<div class="title">GOTCHA!</div>
+		<b><span id="targetAccounreward">000</span></b> Gotcha! Points
+	</a>
+	
+	<div id="file_infos" class="home_window">
+		<div class="label">CURRENT TARGET INFORMATIONS</div>
+		<div class="info_label">Nickname</div>
+		<div id="profilevalueusername" class="info_value">nickname</div>
+		<div class="info_label">Full Name</div>
+		<div id="profilevaluefirstname" class="info_value">Nome Completo</div>
+		<div class="info_label">Hair Color</div>
+		<div id="profilevaluehaircolor" class="info_value">Some Color</div>
+		<div class="info_label">Eyes Color</div>
+		<div id="profilevalueeyescolor" class="info_value">Some Color</div>
+		<div class="info_label">Height</div>
+		<div id="profilevalueheight" class="info_value">180cm</div>
+		<div class="info_label">Distinguishing Marks</div>
+		<div id="profilevaluesigns" class="info_value">First Mark<br/>Second Mark</div>
+		<div class="info_label">Control Zones</div>
+		<div id="profilevaluezone" class="info_value">First Zone<br/>Second Zone</div>
+		
+		<div style="clear:both;"></div>
+		<div class="info">USE THEM WISELY TO GET TO THE TARGET</div>
+	</div>
+	
+	
+	<!--div id="targetnickname">
+		<accountname id="targetname"></accountname><br>
+	</div>
+	<div id="targetphoto">
+		<img src="img/pic.png"/>
+	</div>
+	<div id="targetinfo">
+		<a href="#profile"><button class="button black" onclick="gotchaHome.profile('targetProfile')">Profile Info</button></a><br>
+		<div id="targetreward">
+			<div class="etiquette">Reward</div>
+		</div>
+	</div>
+	<div id="targetgotchabutton">
+		<button class="button gotcha" onclick="gotchaTarget.checkCoords()">GOTCHA!</button>
+	</div-->
+</div>
+
+
+<script>gotchaTarget.loadUserData()</script>

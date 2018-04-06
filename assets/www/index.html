@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>Gotcha!</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="css/gotcha!.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="js/cordova/cordova.js"></script>
+    	<script data-main="application/main" src="js/require/require.js"></script>   
+    </head>
+    
+    <body> 
+    	
+    	<div id="fb-root"></div>
+    	<script>
+		  //What follows is standard Facebook JS initialization.  See Facebook for more details.
+		  //Facebook JS SDK code here.  Use your own Facebook App ID
+		  window.fbAsyncInit = function() {
+		    FB.init({
+		      appId      : '1481701292051103', // FB App ID
+		      status     : true, // check login status
+		      cookie     : true, // enable cookies to allow the server to access the session
+		      xfbml      : true  // parse XFBML
+		    });
+		 
+		    // Additional initialization code here
+		  };
+		 
+		  // Load the SDK Asynchronously
+		  (function(d){
+		     var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+		     js = d.createElement('script'); js.id = id; js.async = true;
+		     js.src = 'http://connect.facebook.net/en_US/all.js';
+		     d.getElementsByTagName('head')[0].appendChild(js);
+		   }(document));
+		</script>
+    	
+		<div id="zero"></div> 
+		<div id="popuperror"></div>
+		<div id="taptoback"></div> 
+		<div id='popupGeneralBackground'></div>	
+		<div id='popupGeneral'></div>
+		<div id='popupbackground'></div>	
+		<div id='popupwaiting'>
+			<popupWaitingHead>Wait please</popupWaitingHead><br><br>
+			<div id="squaresWaveG">
+				<div id="squaresWaveG_1" class="squaresWaveG"></div>
+				<div id="squaresWaveG_2" class="squaresWaveG"></div>
+				<div id="squaresWaveG_3" class="squaresWaveG"></div>
+				<div id="squaresWaveG_4" class="squaresWaveG"></div>
+				<div id="squaresWaveG_5" class="squaresWaveG"></div>
+				<div id="squaresWaveG_6" class="squaresWaveG"></div>
+				<div id="squaresWaveG_7" class="squaresWaveG"></div>
+				<div id="squaresWaveG_8" class="squaresWaveG"></div>
+			</div>
+		</div>       	       
+    </body>
+    
+</html>

@@ -1,0 +1,900 @@
+/**************************************************************************** STANDARD FOR MOBILE */
+html{
+	height:100%;
+	width:100%;
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body{
+	-webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+	height:100%;
+	width:100%;
+    margin:0px;
+    padding:0px;
+    background-color:#222222;
+}
+
+#zero {
+	width:100%;
+	height:100%;
+	margin:0px;
+    padding:0px;
+}
+/**************************************************************************** END STANDARD MOBILE */
+
+/**************************************************************************** ADD FONTS */
+@font-face {
+font-family: 'Heffer';
+src:local('Heffer'), url('fonts/Heffer.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'Report';
+src:local('Report'), url('fonts/Report.ttf') format('truetype');
+}
+
+/*************************************************************************** END ADD FONTS */
+
+/*************************************************************************** Scritte Start */
+titlelogin {
+	font-size: 5em;
+	font-family: Heffer;
+}
+
+#titleloginDiv {
+	margin-top: 20%;
+}
+
+titleregistrazione {
+	font-size: 2em;
+	font-family: Report;
+	position : relative;
+	top: 0.5em;
+}
+
+titlehome {
+	font-size: 3em;
+	font-family: Heffer;
+	position : relative;
+	top: 0.2em;
+}
+/*
+accountname {
+	font-size: 4em;
+	font-family: Report;
+	font-weight:bold;
+}
+*/
+attribute {
+	font-size: 1.1em;
+	font-family: Report;
+}
+
+rank {
+	font-size: 2em;
+	font-family: Report;
+	letter-spacing: 2px;
+	margin: 2%;
+}
+
+disclaimerhead {
+	font-size: 2.5em;
+}
+
+disclaimerbody {
+	font-size: 1em;
+}
+
+popupWaitingHead {
+	font-size: 1.5em;	
+}
+.etiquette {
+	background-image: -webkit-gradient(linear, left top, left bottom, 
+		 from(#AAA9A9),
+		 color-stop(0.5, #FFFFFF), 
+		 color-stop(0.5, #FFFFFF), 
+		 to(#AAA9A9));
+	color: Black;
+	font-family: Report; 
+	font-size: 1.5em !important;
+	width:100%;
+}
+/*************************************************************************** Scritte End */
+
+/*************************************************************************** START CSS LOGIN */
+#main.login{
+	text-align : 	center;
+	height: 		95% !important;
+	padding:		0 2em;
+}
+#main.login #gap{
+	height:			10%;
+}
+#main.login #logo{
+	color:			#FFFFFF;
+	font-weight:	bold;
+	font-family:	Heffer;
+	font-size:		2.6em;
+	letter-spacing:	0.2em;
+	margin-top:		0.2em;
+}
+#main.login form{
+	margin:			2em 0;
+	padding:		0;
+}
+
+input{
+	background:		rgba(0,0,0,0);
+	border:			0;
+	border-bottom:	solid 2px #444444;
+	padding:		0.2em;
+	padding-bottom:	0;
+	margin-bottom:	0.5em;
+	color:			#FFFFFF;
+}
+input::-webkit-input-placeholder{
+	padding:		0.2em;
+	padding-bottom:	0;
+}
+
+#main.login input{
+	font-family:	Report; 
+	margin:			0em;
+	width:			80%;
+	font-size:		3em;
+	
+}
+#main.login input::-webkit-input-placeholder{
+	font-family: 	Report; 
+	font-size:		1em;
+	color:			#444444;
+}
+#main.login .buttons{
+	margin:			1em;
+}
+#main.login .button{
+	font-size:		1.4em;
+	margin-bottom:	0.2em;
+}
+#main.login .button.big{
+	font-size:		2em;
+}
+#main.login .button.blue span{
+	font-family:	Arial;
+}
+/*
+#main.login input{
+	margin:1.5em;
+	width: 85%;
+	height: 3em;
+	font-size:1em;
+	opacity:0.9;
+}
+*/
+#main.login input.button{
+	margin:1.5em;
+	width: 25%;
+	height: 3em;
+	font-size:1em;
+}
+
+::-webkit-input-placeholder {
+   font-size:1.5em;
+   padding: 0;
+   line-height:1%;
+}
+
+
+#loginfooter{
+	height: 9.5%;
+	width:100%;
+	text-align: center;
+	position: absolute;
+	bottom: 0.5em;
+}
+
+#popupGeneral .buttons{
+	margin:			1em;
+}
+
+#popupGeneral .label{
+	color:			#FFFFFF;
+	font-family:	Report;
+	font-size:		2.0em;
+}
+
+#tempPasswordForm{
+	margin:	2em 0;
+	padding: 0;
+}
+#tempPasswordInput{
+	font-family:Report; 
+	margin:	0em;
+	width:	80%;
+	font-size:	2em;
+}
+#newPasswordInput{
+	font-family:Report; 
+	margin:	0em;
+	width:	80%;
+	font-size:	2em;
+}
+#usernameInput{
+	font-family:Report; 
+	margin:	0em;
+	width:	80%;
+	font-size:	2em;
+}
+#popupGeneral input::-webkit-input-placeholder{
+	font-family: 	Report; 
+	font-size:		1em;
+	color:			#444444;
+}
+
+
+/*************************************************************************** END CSS LOGIN */
+
+/*************************************************************************** START CSS REGISTRAZIONE */
+#registrazionefooter{
+	height: 9.5%;
+	width:100%;
+	text-align: center;
+	position: absolute;
+	bottom: 0.5em;
+}
+
+.registrazione{
+	text-align : center;
+	position: absolute;
+	top: 5em;
+}
+
+#registrazioneImage, #registrazioneButtons {
+	float:left;
+	width:35%;
+	height:40%;
+	text-align:center;
+	margin: 1% 2% 1% 2%;
+	padding:1% 5% 1% 5%;
+}
+
+#registrazioneButtons button.button{
+	margin:15% 7% 15% 7%;
+}
+
+#main.registrazione input.button{
+	margin:1.5em;
+	width: 25%;
+	height: 3em;
+	font-size:1em;
+}
+
+#main.registrazione input,button {
+	margin: 0.3em;
+}
+
+#main.registrazione input{
+	height:2em;
+	width: 80%;
+}
+
+#smallImage  {
+	float:left;
+	display:block;
+	max-height:100%;
+	margin: auto;
+}
+
+#popup {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.7;
+    text-align: center;
+    position:fixed;
+    z-index: 3;
+    display: none;
+}
+
+#popuperror {
+	width: 100%;
+    height: 20%;
+    background: #000;
+    opacity: 0.7;
+    text-align: center;
+    position:absolute;
+    top:60%;
+    z-index: 3;
+    display: none;
+    color:white;
+    font-size: 1.5em;
+}
+
+#taptoback {
+    opacity: 0.7;
+    text-align: center;
+    z-index: 4;
+	position:absolute;
+    top:76%;
+    right:1%;
+	color: white;
+	font-size: 1em;
+}
+
+#gotchadisclaimer {
+ 	text-align: center;
+ 	color: white;
+ 	position: relative;
+ 	top: 10%;
+}
+
+#popupbackground {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+}
+
+#popupwaiting {
+ 	text-align: center;
+ 	color: white;
+ 	position: absolute;
+ 	top: 20%;
+ 	padding: 0 5%;
+ 	width:90%;
+ 	display:none;
+}
+
+#popupGeneral {
+ 	text-align: center;
+ 	color: white;
+ 	position: absolute;
+ 	top: 20%;
+ 	padding: 0 5%;
+ 	width:90%;
+ 	display:none;
+}
+
+#popupGeneralBackground {
+	position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+    display:none;
+}
+/*************************************************************************** STOP CSS REGISTRAZIONE */
+
+/*************************************************************************** START CSS HOME */
+#main.home {
+	text-align: center;
+}
+
+
+
+a.button{
+	font-size:		1.5em;
+	font-family:	Report;
+	display:		block;
+	color:			#FFFFFF;
+	border:			solid 1px #888888;
+	border-radius:	0.3em;
+	text-align:		center;
+	overflow:		hidden;
+	background-image:-webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, #555555),
+        color-stop(1, #444444)
+    );
+}
+a.button .small{
+	width:			2em;
+	height:			2em;
+}
+a.button.red{
+	border:			solid 1px #BB8888;
+	background-image:-webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, #883333),
+        color-stop(1, #772222)
+    );
+}
+a.button.blue{
+	border:			solid 1px #8888BB;
+	background-image:-webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, #333388),
+        color-stop(1, #222277)
+    );
+}
+
+
+
+
+#home_user{
+	padding-bottom:	1em;
+	border-bottom:	solid 2px #333333;
+	margin-bottom:	1em;
+}
+
+#home_userphoto{
+	height:			6em;
+	width:			6em;
+	float:			left;
+	border:			solid 2px #666666;
+	border-radius:	3em;
+	overflow:		hidden;
+	margin-left:	0.5em;
+	margin-top:		1em;
+	box-shadow: 	0 0 2em 0 #000000;
+}
+#home_userphoto img{
+	width:		110%;
+	height:		110%;
+}
+
+#home_userphoto_buttons{
+	width: 100%;
+	display: none;
+	height: 20%;
+	border-top: solid 2px #333333;
+	margin-top: 2%;
+	padding-top: 3%;
+	float:left;
+}
+
+#home_userdetails{
+	padding:		0 0 0 1em;
+	text-align:		left;
+}
+#accountname{
+	font-size:		4em;
+	font-family:	Report;
+	text-transform:	capitalize;
+	text-align:		center;
+}
+.accountinfo{
+	color:			#888888;
+	font-size:		1.2em;
+	font-family:	Report;
+	text-align:		center;
+}
+
+.home_window{
+	background:		rgba(255,255,255,0.1);
+	border-radius:	0.8em;
+	border:			solid 2px #000000;
+	box-shadow: 	0 0 2em 0 #000000;
+	overflow:		hidden;
+	margin-bottom:	1em;
+}
+.home_window .label{
+	color:			#FFFFFF;
+	font-family:	Report;
+	font-size:		1.2em;
+	padding:		0.1em;
+	box-shadow: 	0 0 4em 0 #000000;
+    background-image:-webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, #444444),
+        color-stop(1, #222222)
+    );
+	border-bottom:	solid 1px #666666;
+	margin-bottom:	0.2em;
+}
+.home_window .info{
+	font-size:		0.8em;
+	color:			#666666;
+	padding-bottom:	0.4em;
+}
+#home_gamezones{
+}
+#home_gamezones .item{
+	font-size:		2em;
+	margin:			0.2em 0.2em;
+}
+
+#home_gameplayers{
+}
+#home_gameplayers .item{
+	font-size:		6em;
+	font-family:	Report;
+	color:			#888888;
+	height:			0.9em;
+}
+
+#home_gametarget{
+
+}
+#home_gametarget .photo{
+	height:			5em;
+	width:			5em;
+	float:			left;
+	border:			solid 2px #666666;
+	border-radius:	3em;
+	overflow:		hidden;
+	margin-left:	1em;
+	margin-top:		0.5em;
+	margin-bottom:	0.5em;
+}
+#home_gametarget .photo img{
+	width:		110%;
+	height:		110%;
+}
+#home_gametarget  #home_userdetails{
+	padding:		0.4em 0 0 1em;
+	text-align:		left;
+}
+#home_gametarget #accountname{
+	font-size:		2em;
+}
+#home_gametarget .accountinfo{
+	font-size:		1.2em;
+}
+
+#home_gametarget .button.small{
+	margin:			0.3em;
+}
+#home_gametarget .button.red{
+	margin:			0.3em;
+	padding:		0.5em;
+}
+
+/*
+#homephoto {
+	text-align:center;
+	width: 49%;
+	height: 48%;
+	float: left;
+	margin-top: 2%;
+	
+}
+
+#homephoto img {
+	max-height: 95%;
+	max-width: 95%;
+}
+
+#homeaccount {
+	text-align:center;
+	width: 49%;
+	height: 48%;
+	float: left;
+	margin-top: 2%;
+	
+}
+
+#homeaccountgotcha {
+	text-align:center;
+	width: 46%;
+	height: 50%;
+	float: left;
+	border: 1px solid black;
+	margin: 2%;
+}
+
+#homeaccountrank {
+	text-align:center;
+	width: 46%;
+	height: 50%;
+	float: left;
+	border: 1px solid black;
+	margin: 2%;
+}
+
+#homegamezone {	
+	width: 45%;
+	height: 30%;
+	float: left;
+	border: 1px solid black;
+	margin: 0% 1% 1% 4%;
+	font-size: 1em;
+}
+
+.homegamezonekey {
+	width:100%;
+	height:18%;
+	text-align: left;
+}
+
+#keyzoneForm {
+	width:95%;
+	height:95%;
+	margin:0 auto !important;
+}
+#keyzoneInput {
+	width:95%;
+	height:95%;
+}
+
+#homegameplayers {	
+	width: 45%;
+	height: 30%;
+	float: left;
+	border: 1px solid black;
+	margin: 0% 2% 1% 1%;
+	
+}
+
+#homegameready {	
+	width: 100%;
+	height: 20%;
+	float: left;
+}
+*/
+/*************************************************************************** STOP CSS HOME */
+
+/*************************************************************************** START CSS PROFILE */
+#profileleft, #profileright {
+	float:left;
+	width:49.5%;
+	height:95%;
+	margin-top:5%;	
+}
+
+
+#main.profile .profileattribute {
+	margin-top: 1.5%;
+	font-size: 1.9em;
+	border: 1px solid white;
+	width:100%;
+	height:10%;
+	text-align:center;
+	color:black;
+	margin : 0 auto;
+}
+
+#main.profile .profilevalue {
+	margin-top: 1.5%;
+	border: 1px solid black;
+	font-size: 1.3em;
+	width:100%;
+	height:10%;
+	text-align:center;
+	color:black;
+	line-height:2em;
+}
+
+#main.profile .big {
+	height:20%;
+	margin-top: 3%;
+}
+
+#profileForm {
+	width:95%;
+	height:95%;
+	margin:0 auto !important;
+}
+#profileInput {
+	width:95%;
+	height:95%;
+}
+
+.attribute{
+	float:left;
+	width:80%;
+	text-align:center;
+	font-size: 1.1em;
+	font-family: Report;
+	margin-top:7%;
+}
+.numbers{
+	float:left;
+	height: 45%;
+	width: 15%;
+	margin-top:7%;
+	font-family: Report;
+	font-style:italic;
+}
+
+/*************************************************************************** STOP CSS PROFILE */
+
+/*************************************************************************** START CSS TARGET */
+#main.target {
+}
+#targetnickname {
+	width:100%;
+	height:10%;
+	margin-top:10%;
+	margin-bottom:10%;
+	text-align: center;
+}
+#targetphoto {
+	float:left;
+	height:50%;
+	width:50%;
+	margin-top:1%;
+	text-align: center;
+}
+
+#targetphoto img {
+	max-height: 95%;
+	max-width: 95%;
+}
+
+#targetinfo {
+	text-align:center;
+	width:50%;
+	float:left;
+	height:50%;
+	margin-top: 1%;
+}
+
+#targetreward {
+	width:90%;
+	height:50%;
+	border: 1px solid black;
+	margin: 10% auto auto auto;
+}
+
+#targetgotchabutton {
+	text-align: center;
+	height: 30%;
+	width: 100%;
+	float:left;
+}
+
+/*************************************************************************** STOP CSS TARGET */
+
+/*************************************************************************** START CSS ACCOUNTSTATS */
+.accountstats {
+	text-align:center;
+}
+
+#accountstatsrankbeforeme, #accountstatsrankme, #accountstatsrankafterme {
+	width:95%;
+	height:10%;
+	border: 1px solid black;
+	margin:2.5%;
+	text-align: center;
+}
+
+#accountstatsscore, #accountstatsgotcha, #accountstatstarget, #accountstatsreward {
+	width:45%;
+	height:18%;
+	float: left;
+	border: 1px solid black;
+	margin: 2.3%;
+	text-align: center;
+}
+
+/*************************************************************************** STOP CSS ACCOUNTSTATS */
+
+/*************************************************************************** START CSS GLOBALSTATS */
+.globalstats {
+	text-align:center;
+}
+
+#globalstatsbestrank, #globalstatssecondrank, #globalstatstirthrank {
+	width:95%;
+	height:10%;
+	border: 1px solid black;
+	margin:2.5%;
+	text-align: center;
+}
+
+#globalstatsbestscore, #globalstatsbestgotcha, #globalstatsbesttarget, #globalstatsbestreward {
+	width:45%;
+	height:18%;
+	float: left;
+	border: 1px solid black;
+	margin: 2.3%;
+	text-align: center;
+}
+/*************************************************************************** STOP CSS GLOBALSTATS */
+
+
+/*
+header{
+	height:9.5%;
+	margin: 0px;
+	padding: 0px;
+	color: black;	
+    background-image:-webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, #AAA9A9),
+        color-stop(0.60, #FFFFFF)
+    );
+    border-bottom: 2px solid grey;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	text-align: center;
+}
+*/
+header{
+    background-image:-webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, #444444),
+        color-stop(1, #222222)
+    );
+	border-bottom:	solid 2px #666666;
+	padding:		0.5em 1em;
+	box-shadow: 	0 0 4em 0 #000000;
+}
+header #logo{
+	float:			left;
+	color:			#FFFFFF;
+	font-weight:	bold;
+	font-family:	Heffer;
+	font-size:		2.6em;
+	letter-spacing:	0.2em;
+	margin-top:		0.2em;
+}
+header #menu{
+	float:			right;
+	margin-top:		0.5em;
+}
+header #menu .button{
+	float:			right;
+	margin-left:	0.5em;
+}
+
+#main{
+	padding: 1em;
+	margin: 0px;
+	color: #FFFFFF;
+	overflow: hidden;
+}
+
+/*************************************************************************** START CSS FOOTER */
+
+footer {
+	text-align: center;
+	font-size:20px;
+	margin:0px;
+	padding: 0px;
+	height: 9.5%;
+	color: black;
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #AAA9A9),
+        color-stop(0.60, #FFFFFF)
+    );
+	border-top: 2px solid grey;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+img.linkhome {
+	max-height: 2.5em;
+	position: absolute;
+	left: 1%;
+	bottom:1%;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+a.linktarget {
+	display:none;
+}
+
+img.linkaccountstats {
+	max-height: 2.5em;
+	position: absolute;
+	right: 1%;
+	border: 2px solid black;
+	border-radius: 10px;
+	bottom:1%;
+}
+
+/*************************************************************************** STOP CSS FOOTER */
